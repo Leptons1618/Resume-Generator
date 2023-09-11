@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Template 2</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+        * {
+            font-family: "Open Sans", sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .background {
+            background-color: #81cc09;
+        }
+
+        .img-logo {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #333;
+        }
+
+        .name1,
+        .address,
+        .email,
+        .phn {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .name1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .personal {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .hr-row {
+            background-color: #ddd;
+            height: 1px;
+            border: none;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #0078e7;
+            text-decoration: none;
+        }
+
+        .social-head {
+            font-weight: bold;
+            font-size: 18px;
+            color: #0078e7;
+            margin-top: 20px;
+        }
+
+        .social p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Updated button styles */
+        .btn-primary {
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            background-color: #6bac02;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #81cc09;
+            transform: scale(1.05);
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card {
+            margin-top: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #81cc09;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="resume-template2">
+        <div class="row">
+            <div class="col-md-4 background text-center">
+                <img 
+                    src="default-logo.png" 
+                    alt="default-picture"
+                    class="img-logo"
+                    id="imgT"
+                >
+                <div class="container personal">
+                    <p class="name1" id="nameT1"></p>
+                    <p class="address" id="addT"></p>
+                    <p class="phn" id="contactT"></p>
+                    <p class="email" id="emailT"></p>
+                </div>
+                <div class="container social">
+                    <h4 class="social-head"></h4>
+                    <hr class="hr-row">
+                    <p class="">
+                        <a id="lkT" href="#1"></a>
+                    </p>
+                    <p class="">
+                        <a id="gitT" href="#2"></a>
+                    </p>
+                    <p class="">
+                        <a id="lcT" href="#3"></a>
+                    </p>
+                    <p class="">
+                        <a id="ptT" href="#4"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1 class="text-center mt-4" id="nameT2" style="font-size: 50px; font-weight: bold;"></h1>
+
+                <!-- Education -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="edT">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="skillT">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="projT">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Certifications</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="cerT">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <button class="btn-primary" onclick="window.print()">
+                        Print
+                    </button>
+                </div>
+                <div class="col-md-6 text-center">
+                    <button class="btn-primary" onclick="window.history.back()">
+                        Back
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+<script>
+    // Function to parse URL parameters
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // Get the user data from URL parameters
+    const imgDataUrl = getParameterByName('img');
+    const name = getParameterByName('name');
+    const address = getParameterByName('address');
+    const contact = getParameterByName('contact');
+    const email = getParameterByName('email');
+    const linkedin = getParameterByName('linkedin');
+    const github = getParameterByName('github');
+    const leetcode = getParameterByName('leetcode');
+    const portfolio = getParameterByName('portfolio');
+    const education = getParameterByName('education').split('|');
+    const skills = getParameterByName('skills').split('|');
+    const projects = getParameterByName('projects').split('|');
+    const certifications = getParameterByName('certifications').split('|');
+
+    // Populate template fields with user data
+    document.getElementById('nameT1').textContent = name;
+    document.getElementById('nameT2').textContent = name;
+    document.getElementById('addT').textContent = address;
+    document.getElementById('contactT').textContent = contact;
+    document.getElementById('emailT').textContent = email;
+
+    // Handle the image
+    let imgElement = document.getElementById('imgT');
+    if (imgDataUrl && imgDataUrl !== 'default-logo.png') {
+        imgElement.src = imgDataUrl;
+    } else {
+        imgElement.src = 'default-logo.png';
+    }
+
+    // Handle social links
+    if (linkedin) {
+        document.getElementById('lkT').href = linkedin;
+        document.getElementById('lkT').textContent = linkedin;
+    } else {
+        document.getElementById('lkT').style.display = 'none';
+    }
+
+    if (github) {
+        document.getElementById('gitT').href = github;
+        document.getElementById('gitT').textContent = github;
+    } else {
+        document.getElementById('gitT').style.display = 'none';
+    }
+
+    if (leetcode) {
+        document.getElementById('lcT').href = leetcode;
+        document.getElementById('lcT').textContent = leetcode;
+    } else {
+        document.getElementById('lcT').style.display = 'none';
+    }
+
+    if (portfolio) {
+        document.getElementById('ptT').href = portfolio;
+        document.getElementById('ptT').textContent = portfolio;
+    } else {
+        document.getElementById('ptT').style.display = 'none';
+    }
+
+    // Populate education
+    const educationList = document.getElementById('edT');
+    education.forEach(ed => {
+        const li = document.createElement('li');
+        li.textContent = ed;
+        educationList.appendChild(li);
+    });
+
+    // Populate skills
+    const skillsList = document.getElementById('skillT');
+    skills.forEach(skill => {
+        const li = document.createElement('li');
+        li.textContent = skill;
+        skillsList.appendChild(li);
+    });
+
+    // Populate projects
+    const projectsList = document.getElementById('projT');
+    projects.forEach(proj => {
+        const li = document.createElement('li');
+        li.textContent = proj;
+        projectsList.appendChild(li);
+    });
+
+    // Populate certifications
+    const certificationsList = document.getElementById('cerT');
+    certifications.forEach(cert => {
+        const li = document.createElement('li');
+        li.textContent = cert;
+        certificationsList.appendChild(li);
+    });
+</script>
+</html>

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5; /* Set a light background color */
+}
+
+.background {
+  background-color: #3a9aff;
+}
+
+.img-logo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+p {
+  color: #333; /* Set a darker text color */
+}
+
+.name1,
+.address {
+  font-size: 20px;
+  color: #333; /* Set a darker text color */
+}
+
+.email,
+.phn {
+  font-size: 18px;
+  color: #555; /* Adjust the text color */
+}
+
+.personal {
+  padding-bottom: 10px;
+}
+
+.hr-row {
+  background-color: #ddd; /* Set a light gray background for horizontal lines */
+  height: 1px;
+  border: none;
+}
+
+a {
+  color: #0078e7; /* Set a link color */
+  text-decoration: none;
+}
+
+.social-head {
+  color: #333; /* Set a darker text color */
+  font-weight: bold;
+}
+
+.social {
+  text-align: left;
+  padding-top: 20px;
+}
+
+/* Updated button styles */
+.btn-primary,
+.btn-add {
+  color: white;
+  padding: 15px 30px; /* Adjust button padding */
+  border-radius: 50px; /* Make the button more round */
+  background-color: #6a861c; /* Set a new button background color */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin: 10px; /* Add margin to separate buttons */
+}
+
+.btn-primary:hover,
+.btn-add:hover {
+  background-color: #1c2938;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .template-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.template-image1 {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.template-image2 {
+  max-width: 96%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase the size slightly on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
